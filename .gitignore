@@ -101,3 +101,6 @@ apps/apps/note-app-e2e/artifacts
 node_modules/
 
 apps/hoop-e2e/artifacts
+## Nested node_modules
+
+node_modules/
