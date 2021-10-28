@@ -1,0 +1,76 @@
+{
+  "root": "apps/apps/note-app",
+  "sourceRoot": "apps/apps/note-app/src",
+  "projectType": "application",
+  "targets": {
+    "start": {
+      "executor": "@nrwl/react-native:start",
+      "options": {
+        "port": 8081
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "nx start note-app"
+      }
+    },
+    "run-ios": {
+      "executor": "@nrwl/react-native:run-ios",
+      "options": {}
+    },
+    "bundle-ios": {
+      "executor": "@nrwl/react-native:bundle",
+      "outputs": ["apps/apps/note-app/build"],
+      "options": {
+        "entryFile": "apps/apps/note-app/src/main.tsx",
+        "platform": "ios",
+        "bundleOutput": "dist/apps/apps/note-app/ios/main.jsbundle"
+      }
+    },
+    "run-android": {
+      "executor": "@nrwl/react-native:run-android",
+      "options": {}
+    },
+    "build-android": {
+      "executor": "@nrwl/react-native:build-android",
+      "outputs": [
+        "apps/apps/note-app/android/app/build/outputs/bundle",
+        "apps/apps/note-app/android/app/build/outputs/apk"
+      ],
+      "options": {}
+    },
+    "bundle-android": {
+      "executor": "@nrwl/react-native:bundle",
+      "options": {
+        "entryFile": "apps/apps/note-app/src/main.tsx",
+        "platform": "android",
+        "bundleOutput": "dist/apps/apps/note-app/android/main.jsbundle"
+      }
+    },
+    "sync-deps": {
+      "executor": "@nrwl/react-native:sync-deps",
+      "options": {}
+    },
+    "ensure-symlink": {
+      "executor": "@nrwl/react-native:ensure-symlink",
+      "options": {}
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/apps/note-app/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/apps/note-app"],
+      "options": {
+        "jestConfig": "apps/apps/note-app/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
