@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "awesome-app": "apps/awesome-app",
+    "awesome-app-e2e": "apps/awesome-app-e2e",
+    "ui-heading": "libs/ui-heading"
+  }
 }
