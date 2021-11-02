@@ -96,3 +96,6 @@ buck-out/
 node_modules/
 
 apps/awesome-app-e2e/artifacts
+## Nested node_modules
+
+node_modules/

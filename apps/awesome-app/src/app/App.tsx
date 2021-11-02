@@ -19,14 +19,19 @@ import {
 import openURLInBrowser from 'react-native/Libraries/Core/Devtools/openURLInBrowser';
 import Star from './star.svg';
 import { UiHeading } from '@acme/ui-heading';
-
+import {UiLayout} from "@acme/ui-layout"
 const App = () => {
+  const onPressHandler = () => {
+    console.log('press click button')
+  }
   return (
     
       <SafeAreaView>
         <View style={styles.box}>
           <UiHeading text="Hello World!" />
           <Text style={styles.text}>This is a demo app.</Text>
+        
+        <UiLayout />
         </View>
       </SafeAreaView>
     

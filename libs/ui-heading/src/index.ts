@@ -1,1 +1,2 @@
-export * from './lib/ui-heading';
+export  *  from './lib/ui-heading';
+
