@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@acme/card-ui": ["libs/card-ui/src/index.ts"],
       "@acme/ui-heading": ["libs/ui-heading/src/index.ts"],
       "@acme/ui-layout": ["libs/ui-layout/src/index.ts"]
     }

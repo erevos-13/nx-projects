@@ -3,6 +3,7 @@
   "projects": {
     "awesome-app": "apps/awesome-app",
     "awesome-app-e2e": "apps/awesome-app-e2e",
+    "card-ui": "libs/card-ui",
     "ui-heading": "libs/ui-heading",
     "ui-layout": "libs/ui-layout"
   }

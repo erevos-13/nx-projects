@@ -1,0 +1,23 @@
+{
+  "root": "libs/card-ui",
+  "sourceRoot": "libs/card-ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/card-ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/card-ui"],
+      "options": {
+        "jestConfig": "libs/card-ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

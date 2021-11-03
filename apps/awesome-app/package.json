@@ -8,6 +8,7 @@
     "react": "*",
     "react-native": "*",
     "react-native-svg": "*",
-    "@testing-library/react": "*"
+    "@testing-library/react": "*",
+    "react-native-image-picker": "*"
   }
 }
